@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Second Exercise</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+		<meta charset="utf-8"/>
+	</head>
+	<body>
+    <span class = "heading">Bal Bharati Public School</span>
+    <div id = "wrapper">
+    <img src = "bbps.jpg" class = "bbps" id = "imgId1"/><br/>
+    <div class = "content">
+      <span class = "school">Classes and Sections</span>
+        <div class = "module">
+          <ul id = "myList">
+            <li class = "current">Class Section - A</li>
+            <li>Class Section - B</li>
+            <li class = "current">Class Section - C</li>
+            <li>Class Section - D</li>
+          </ul>
+        </div>
+        <span class = "school">Streams</span>
+        <div class = "module">
+          <ul>
+            <li>Commerce</li>
+            <li>Sciencs with maths</li>
+            <li>Medical(Science without maths)</li>
+            <li>Arts</li>
+          </ul>
+        </div>
+        <span class = "school">List of suggested plays from school</span>
+        <ul id = "slideshow">
+            <li>Alice</li>
+            <li>Among Friends and Clutter</li>
+            <li>Anonymous</li>
+            <li>Ariadne's Thread, The Adventures of Theseus and the Minotaur</li>
+            <li>The Art of Rejection: Two One Act Plays</li>
+            <li>Ashland Falls</li>
+            <li>Beauty and the Bee</li>
+            <li>The Happiness Shop</li>
+            <li>The Merrie Christmas Show</li>
+            <li>A Midsummer Night's Dream</li>
+            <li>Postcards from Shakespeare</li>
+            <li>See the Light</li>
+          </ul>
+      </div>
+      <span class = "heading">Fill if interseted in school play</span>
+      <img src = "play.jpg" class = "bbps" alt = "play" id = "imgId2"/>
+      <br/>
+      <div class = "content">
+        <form id = "formId">
+          <label for = "search" class = "lb">Search your name</label>
+          <input type = "text" id = "search" class = "field"/></br>
+          <p>
+            <label for = "name" class = "lb">Name</label>
+            <input type = "text" class = "field" id = "name"/></br>
+          </p>
+          <p>
+            <label for = "class" class = "lb">Class-Section</label>
+            <input type = "text" class = "field" id = "class"/></br>
+          </p>
+          <p>
+            <label for = "stream" class = "lb">Stream</label>
+            <input type = "text" class = "field" id = "stream"/></br>
+          </p>
+          <p>
+            <label for = "specials" class = "lb">Enter your choice for which you want to volunteer</label>
+            <select name="class_sec" id="specials" class = "field">
+              <option></option>
+              <option value="Acting">Acting</option>
+              <option value="Music">Music</option>
+              <option value="Dance">Dance</option>
+              <option value="Instrunmental">Instrunmental</option>
+              <option value="Narration">Narration</option>
+              <option value="Managemnt">Managemnt</option>
+            </select>
+          </p>
+          </br>
+          <input type = "submit" value = "Submit"/>
+        </form>
+      </div>
+  
+    </div>
+    <br/>
+   
+	
+    <script src="js/jquery.js"></script>
+    <script src="js/sandbox.js"></script>
+	</body>
+</html>
