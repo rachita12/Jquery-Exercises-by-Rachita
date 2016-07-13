@@ -1,0 +1,67 @@
+*{
+  margin:0;
+  padding:0;
+}
+body{
+  line-height:30px;
+  //background:linear-gradient(-90deg,#ff9900,#ffb84d,#ffcc00,#ffb84d,yellow,#ffad33,#ffff00,#ffff66);
+}
+.heading{
+  margin-left:230px;
+  font-size:50px;
+  color:#000066;
+  word-spacing:10px;
+  letter-spacing:5px;
+  font-weight:bold;
+}
+.content{
+  margin:0 10px 0 20px;
+}
+form{
+  overflow:auto;
+}
+.lb{
+  float:left;
+	width:300px;
+  text-align:left;
+  font-size:16px;
+  font-family:tahoma;
+}
+.field{
+  width:200px;
+  height:20px;
+  border:1px solid black;
+}
+.bbps{
+  width:100%;
+  height:350px;
+  margin-top:20px;
+}
+.school{
+  font-weight:bold;
+  font-size:20px;
+  color:#ff0066;
+}
+table, tr, td{
+  margin:10px 0 0 15px;
+  border:2px solid black;
+  border-collapse:collapse;
+}
+td{
+  padding:5px;
+}
+ul{
+  list-style-type:circle;
+}
+.firstForm{
+  background-color:pink;
+}
+.current{
+  background-color:orange;
+}
+.disabled{
+  background-color:blue;
+}
+.submitBtn{
+  border:3px solid black;
+}
