@@ -3,7 +3,8 @@ function SearchBox(targetOnEvent) {
   this.targetOnEvent = targetOnEvent;
 }
 SearchBox.prototype = {
-  /* part A = Set the value of the search input to the text of the label element*/
+  
+	/* part A = Set the value of the search input to the text of the label element*/
   changeLabel : function() {
     var _this = this;
     _this.targetOnEvent.keyup(function(){
@@ -20,20 +21,22 @@ SearchBox.prototype = {
   removeLabel : function() {
     this.targetOnEvent.remove();
   },
+	
   /*part D = Bind a focus event to the search input that removes the hint text and the "hint" class*/
   onFocusEvent : function() {
+		var _this = this;
     this.targetOnEvent.focus(function(){
-      $(this).val("");
-      $(this).removeClass("hint");
+      _this.targetOnEvent.val("").removeClass("hint");
     });
   },
   
   /*part E = Bind a blur event to the search input that restores the hint text and "hint" class if no search text was entered*/
   onBlurEvent : function(){
+		var _this = this;
     this.targetOnEvent.blur(function(){
-      var searchValue = $(this).val();
+      var searchValue = _this.targetOnEvent.val();
       if(searchValue == null || searchValue == ""){
-        $(this).addClass("hint");
+        _this.targetOnEvent.addClass("hint");
       }
     });
   }
@@ -55,4 +58,3 @@ $(document).ready(function(){
   var event5 = new SearchBox($('.input_text'));
   event5.onBlurEvent();
 });
-//END
