@@ -55,3 +55,4 @@ $(document).ready(function(){
   var event5 = new SearchBox($('.input_text'));
   event5.onBlurEvent();
 });
+//END
