@@ -1,0 +1,25 @@
+*{
+	margin:0;
+	padding:0;
+}
+.wrapper{
+	display:flex;
+	flex-direction:column;
+	min-height:100px;
+	width:400px;
+	position:relative;
+}
+.container{
+	flex:1;
+	width:350px;
+}
+.btn{
+	width:45px;
+	height:25px;
+	position:absolute;
+	right:0;
+	bottom:0;
+}
+.itemDiv{
+	background-color:yellow;
+}
